@@ -307,11 +307,6 @@ class CanvasEngine(QGraphicsView):
                 path = QPainterPath()
                 elements = item_data['path']
                 if not elements: continue
-                
-                # Reconstrói Path
-                # Qt PainterPath Elements: 0=MoveTo, 1=LineTo, 2=CurveTo, 3=CurveToData
-                # Simplificação: Apenas recriamos movimentos.
-                
                 path.moveTo(elements[0]['x'], elements[0]['y'])
                 
                 i = 1
@@ -322,10 +317,6 @@ class CanvasEngine(QGraphicsView):
                     elif elm['type'] == 1: # LineTo
                         path.lineTo(elm['x'], elm['y'])
                     elif elm['type'] == 2: # CurveTo
-                        # Pega os proximos 2 pontos de controle?
-                        # quadTo usa 1 ponto de controle e 1 final.
-                        # O QPainterPath salva cubicTo internamente geralmente.
-                        # Vamos assumir lineTo para simplicidade se complexo, ou tentar quadTo
                         path.quadTo(elm['x'], elm['y'], elm['x'], elm['y']) # Fallback simples
                     
                     # Refinamento: QPainterPath serializado desse jeito é tricky.
@@ -345,3 +336,4 @@ class CanvasEngine(QGraphicsView):
                 if 'z' in item_data:
                      path_item.setZValue(item_data['z'])
                 self.scene.addItem(path_item)
+
