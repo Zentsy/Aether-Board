@@ -16,7 +16,6 @@ Se você está no Windows, não precisa instalar nada!
 - **Canvas Infinito**: Espaço ilimitado para suas ideias.
 - **Renderização LaTeX**: Digite fórmulas matemáticas e veja-as aparecerem instantaneamente.
 - **Auto-Save**: Seus desenhos são salvos automaticamente ao fechar.
-- **Estética premium**: Interface inspirada no estilo Frutiger Aero.
 
 ---
 
@@ -32,7 +31,7 @@ If you are on Windows, no installation is required!
 - **Infinite Canvas**: Unlimited space for your brainstorms.
 - **LaTeX Rendering**: Type math formulas and see them appear instantly.
 - **Auto-Save**: Your progress is automatically saved upon closing.
-- **Premium Aesthetics**: Interface inspired by the Frutiger Aero style.
 
 ---
+
 
