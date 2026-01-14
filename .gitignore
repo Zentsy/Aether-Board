@@ -1,0 +1,23 @@
+# Python
+src/__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Build artifacts
+!/AetherBoard_PRO.exe
+*.spec
+aether_icon.ico
+aether_test.ico
+
+# Data
+board_data.json
+board_data.json.bak
+
+# IDEs
+.vscode/
+.idea/
+*.swp
